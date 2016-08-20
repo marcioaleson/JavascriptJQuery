@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Usando script na head tag.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      function minhaFuncao() {
+        document.getElementById('teste').innerHTML = "Mudando o paragrafo.";
+      }
+    </script>
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <p id="teste">
+        Esse paragrafo vai mudar!!!
+      </p>
+      <button type="button" name="button" onclick="minhaFuncao()">Click aqui!</button>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  </body>
+</html>
