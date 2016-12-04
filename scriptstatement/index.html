@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript statement exemplos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <p id="teste"></p>
+      <br>
+      <p id="outro_teste"></p>
+      <br>
+      <p id="meu_paragrafo">Eu sou um paragrafo.</p>
+      <div id="minha_div">Eu sou uma div.</div>
+
+      <p>
+      <button type="button" onclick="minha_função()">Olha isso!</button>
+      </p>
+      <script type="text/javascript">
+      //Variáveis
+      var temp;
+      var x = 1;
+      var y = 2;
+      var z = x + y;
+      //Usando uma instrução javascript para escrever em uma tag html.
+          document.getElementById('teste').innerHTML = "Teste realizado com sucesso!";
+      //Usando uma instrução javascript para escrever um resulatado em uma tag html.
+          document.getElementById("outro_teste").innerHTML = z;
+      //Usando um bloco em javascript para alterar uma tag html.
+      function minha_função() {
+          document.getElementById("meu_paragrafo").innerHTML = "Olá programador!";
+          document.getElementById("minha_div").innerHTML = "Como vai você?";
+    }
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
