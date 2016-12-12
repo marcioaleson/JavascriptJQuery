@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript objetos exemplos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <script type="text/javascript">
+      //Variáveis
+      var car = {type: "Fiat", model: "500", color: "white"};
+      var person = {
+        firstName : "John",
+        lastName : "Doe",
+        id : "5566",
+        fullName : function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+
+      document.getElementById('teste').innerHTML = car.type;
+      document.getElementById('teste2').innerHTML = person.fullName();
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>

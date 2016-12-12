@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript escopos exemplos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <script type="text/javascript">
+      //Variáveis
+      var carName2 = "Volvo";
+
+      myFunction();
+      myFunction2();
+
+    document.getElementById('teste').innerHTML =
+    "O tipo de carName é " + typeof carName;
+
+     function myFunction() {
+       var canName = "Volvo";//Variável local a função.
+     }
+
+     function myFunction2() {
+       document.getElementById('teste2').innerHTML =
+       "Eu posso usar variáveis globais onde eu quiser!" + " " + carName2;
+     }
+
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
