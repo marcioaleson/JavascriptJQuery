@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript variáveis exemplos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <p id="teste"></p>
+      <p>O resultado da adição de John + " " + Doe?</p>
+      <p id="teste2"></p>
+      <p>O resultado da adição de 2 + 3 + "5"?</p>
+      <p id="teste3"></p>
+      <script type="text/javascript">
+      //Variáveis
+      var pessoa = "John Doe",
+      carName = "Volvo",
+      price = 200;
+      var x = "John" + " " + "Doe";
+      var y = 2 + 3 + "5";
+
+      document.getElementById('teste').innerHTML = carName;
+      document.getElementById('teste2').innerHTML = x;
+      document.getElementById('teste3').innerHTML = y;
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
