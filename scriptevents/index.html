@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript eventos exemplos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <button type="button" name="button" onclick="document.getElementById('teste').innerHTML = Date()" >What time is't?</button>
+      <button type="button" name="button" onclick="this.innerHTML = Date()" >What time is't?</button>
+      <button type="button" name="button" onclick="displayDate()" >What time is't?</button>
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <script type="text/javascript">
+        function displayDate() {
+          document.getElementById('teste2').innerHTML = Date();
+        }
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
