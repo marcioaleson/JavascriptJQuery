@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript exemplos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
+
+      <button type="button" name="button" onclick="document.getElementById('teste5').innerHTML = getRandomInterger(0,10)">Click me!</button>
+
+      <button type="button" name="button" onclick="document.getElementById('teste6').innerHTML = getRandomInterger2(1,10)">Click me!</button>
+    <!--JavaSript-->
+    <script type="text/javascript">
+        document.getElementById("teste").innerHTML = Math.random();
+
+       document.getElementById("teste2").innerHTML = Math.floor(Math.random() * 10);
+
+       document.getElementById("teste3").innerHTML = Math.floor(Math.random() * 11);
+
+       document.getElementById("teste4").innerHTML = Math.floor(Math.random() * 100);
+
+       function getRandomInterger(min, max) {
+           return Math.floor(Math.random() * (max - min)) + min;
+       }
+
+       function getRandomInterger2(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+       }
+    </script>
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
