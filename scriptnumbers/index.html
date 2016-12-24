@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript exemplos números.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <button type="button" name="button" onclick="myFunction()">Try it</button>
+      <button type="button" name="button" onclick="myFunction2()">Try it</button>
+      <button type="button" name="button" onclick="myFunction3()">Try it</button>
+      <button type="button" name="button" onclick="myFUnction4()">Try it</button>
+      <button type="button" name="button" onclick="myFunction5()">Try it</button>
+      <button type="button" name="button" onclick="myFunction6()">Try it</button>
+      <button type="button" name="button" onclick="myFunction7()">Try it</button>
+      <button type="button" name="button" onclick="myFunction8()">Try it</button>
+      <button type="button" name="button" onclick="myFunction9()">Try it</button>
+      <button type="button" name="button" onclick="myFunction10()">Try it</button>
+      <button type="button" name="button" onclick="myFunction11()">Try it</button>
+      <button type="button" name="button" onclick="myFunction12()">Try it</button>
+      <button type="button" name="button" onclick="myFunction13()">Try it</button>
+      <button type="button" name="button" onclick="myFunction14()">Try it</button>
+      <button type="button" name="button" onclick="myFunction15()">Try it</button>
+      <button type="button" name="button" onclick="myFunction16()">Try it</button>
+      <button type="button" name="button" onclick="myFunction17()">Try it</button>
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
+      <p id="teste7"></p>
+      <p id="teste8"></p>
+      <p id="teste9"></p>
+      <p id="teste10"></p>
+      <p id="teste11"></p>
+      <p id="teste12"></p>
+      <p id="teste13"></p>
+      <p id="teste14"></p>
+      <p id="teste15"></p>
+      <p id="teste16"></p>
+      <p id="teste17"></p>
+      <script type="text/javascript">
+      function myFunction() {
+        var x = 999999999999999;
+        var y = 9999999999999999;
+        document.getElementById('teste').innerHTML = x + '<br>' + y;
+      }
+
+      function myFunction2() {
+        var x = 0.2 + 0.1;
+        document.getElementById('teste2').innerHTML = "0.1 + 0.2 = " + x;
+      }
+
+      function myFunction3() {
+        var x = (0.2*10 + 0.1*10)/10;
+        document.getElementById('teste3').innerHTML = "0.1 + 0.2 = " + x;
+      }
+
+      function myFUnction4() {
+        document.getElementById('teste4').innerHTML = "0xFF = " + 0xFF;
+      }
+
+      function myFunction5() {
+        var number = 128;
+        document.getElementById('teste5').innerHTML = "128 = " +
+        number + "Decimel, " +
+        number.toString(16) + " Hexadecimal, " +
+        number.toString(8) + " Octal, " +
+        number.toString(2) + " Binary."
+      }
+
+      function myFunction6() {
+        var number = 2;
+        var txt = "";
+        while (number != Infinity) {
+          number = number * number;
+          txt = txt + number + "<br>";
+        }
+        document.getElementById('teste6').innerHTML = txt;
+      }
+
+     function myFunction7() {
+       var x = 2/0;
+       var y = -2/0;
+       document.getElementById('teste7').innerHTML = x + "<br>" + y;
+     }
+
+     function myFunction8() {
+       document.getElementById('teste8').innerHTML = typeof Infinity;
+     }
+
+     function myFunction9() {
+       document.getElementById('teste9').innerHTML = 100 / "Apple";
+     }
+
+     function myFunction10() {
+       document.getElementById('teste10').innerHTML = 100 / "10";
+     }
+
+     function myFunction11() {
+       var x = 100 / "Apple";
+       document.getElementById('teste11').innerHTML = isNaN(x);
+     }
+
+     function myFunction12() {
+       var x = NaN;
+       var y = 5;
+       document.getElementById("teste12").innerHTML = x + y;
+     }
+
+     function myFunction13() {
+       var x = NaN;
+       var y = "5";
+       document.getElementById("teste13").innerHTML = x + y;
+     }
+
+     function myFunction14() {
+       document.getElementById("teste14").innerHTML = typeof NaN;
+     }
+
+     function myFunction15() {
+       var x = 500; //x is a number
+       var y = new Number(500); //y is a object
+       document.getElementById("teste15").innerHTML = (x == y);
+     }
+
+     function myFunction16() {
+       var x = 500; //x is a number
+       var y = new Number(500); //y is a object
+       document.getElementById("teste16").innerHTML = (x === y);
+     }
+
+     function myFunction17() {
+       var x = new Number(500); //x is a number
+       var y = new Number(500); //y is a number
+       document.getElementById("teste17").innerHTML = (x == y);
+     }
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
