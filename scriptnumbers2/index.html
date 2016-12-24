@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript exemplos com funções de números.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
+      <p id="teste7"></p>
+      <p id="teste8"></p>
+    <!--JavaSript-->
+    <script type="text/javascript">
+        var x = 123;
+        var y = 9.556;
+
+        document.getElementById("teste").innerHTML = x.toString() +
+        "<br>" + (123).toString() + "<br>" +
+        (100 + 23).toString();
+
+        document.getElementById("teste2").innerHTML =
+        y.toExponential() + "<br>" +
+        y.toExponential(2) + "<br>" +
+        y.toExponential(4) + "<br>" +
+        y.toExponential(6);
+
+        document.getElementById("teste3").innerHTML =
+        y.toFixed(0) + "<br>" +
+        y.toFixed(2) + "<br>" +
+        y.toFixed(4) + "<br>" +
+        y.toFixed(6);
+
+        document.getElementById("teste4").innerHTML =
+        y.toPrecision() + "<br>" +
+        y.toPrecision(2) + "<br>" +
+        y.toPrecision(4) + "<br>" +
+        y.toPrecision(6);
+
+       document.getElementById("teste5").innerHTML =
+       x.valueOf() + "<br>" +
+       (123).valueOf() + "<br>" +
+       (100 + 23).valueOf();
+
+      document.getElementById("teste6").innerHTML =
+      Number(true) + "<br>" +
+      Number(false) + "<br>" +
+      Number(" 10") + "<br>" +
+      Number("10 ") + "<br>" +
+      Number("10 6");
+
+      document.getElementById("teste7").innerHTML =
+      parseInt("10") + "<br>" +
+      parseInt("10.33") + "<br>" +
+      parseInt("10 6") + "<br>" +
+      parseInt("10 years") + "<br>" +
+      parseInt("years 10");
+
+      document.getElementById("teste8").innerHTML =
+      parseFloat("10") + "<br>" +
+      parseFloat("10.33") + "<br>" +
+      parseFloat("10 6") + "<br>" +
+      parseFloat("10 years") + "<br>" +
+      parseFloat("years 10");
+    </script>
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
