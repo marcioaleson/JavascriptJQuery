@@ -17,34 +17,36 @@
       <p id="teste7"></p>
       <p id="teste8"></p>
       <p id="teste9"></p>
+      <p id="teste10"></p>
+      <p id="teste11"></p>
+      <p id="teste12"></p>
+
     <!--JavaSript-->
     <script type="text/javascript">
-        var d = new Date();
-        var d2 = new Date("October 13, 2014 11:13:00");
-        var d3 = new Date(86400000);
-        var d4 = new Date(99, 5, 24, 11, 33, 30, 0);
-        var d5 = new Date(99, 5, 24);
-        var d6 = new Date();
-        var d7 = new Date();
-        var d8 = new Date();
 
-        document.getElementById("teste").innerHTML = Date();
+    document.getElementById("teste").innerHTML = new Date("2016-03-25");
 
-        document.getElementById("teste2").innerHTML = d;
+    document.getElementById("teste2").innerHTML = new Date("2016-03");
 
-        document.getElementById("teste3").innerHTML = d2;
+    document.getElementById("teste3").innerHTML = new Date("2016");
 
-        document.getElementById("teste4").innerHTML = d3;
+    document.getElementById("teste4").innerHTML = new Date("2016-03-25T12:00:00Z");
 
-        document.getElementById("teste5").innerHTML = d4;
+    document.getElementById("teste5").innerHTML = new Date("2016-03-25T12:00:00-06:00");
 
-        document.getElementById("teste6").innerHTML = d5;
+    document.getElementById("teste6").innerHTML = new Date("03/12/2016");
 
-        document.getElementById("teste7").innerHTML = d6.toString();
+    document.getElementById("teste7").innerHTML = new Date("Mar 25 2016");
 
-        document.getElementById("teste8").innerHTML = d7.toUTCString();
+    document.getElementById("teste8").innerHTML = new Date("25 Mar 2016");
 
-        document.getElementById("teste9").innerHTML = d8.toDateString();
+    document.getElementById("teste9").innerHTML = new Date("March 25 2016");
+
+    document.getElementById("teste10").innerHTML = new Date("MARCH 25 2016");
+
+    document.getElementById("teste11").innerHTML = new Date("Wed Mar 25 2016 09:56:24 GMT+0100 (W. Europe Standard Time)");
+
+    document.getElementById("teste12").innerHTML = new Date("Fri Mar 25 2016 09:56:24 GMT+0100 (Tokyo Time)");
     </script>
 
   <!-- JQuery -->
