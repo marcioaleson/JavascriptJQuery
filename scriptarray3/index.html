@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript operações com arrays exemplos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <button type="button" name="button" onclick="myFunction()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction2()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction3()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction4()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction5()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction6()">Try it!</button>
+
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
+      <p id="teste7"></p>
+      <p id="teste8"></p>
+
+      <script type="text/javascript">
+      //Variáveis
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      var points = [40, 23, 67, 12];
+      var cars = [
+        {type:"Volvo", year:2015},
+        {type:"Saab", year:2012},
+        {type:"BMW", year:2010}
+      ];
+
+      displayCars();
+
+      document.getElementById("teste").innerHTML = fruits;
+      document.getElementById("teste2").innerHTML = fruits;
+      document.getElementById("teste3").innerHTML = points;
+      document.getElementById("teste4").innerHTML = points;
+      document.getElementById("teste5").innerHTML = points;
+      points.sort(function(a,b){return b-a});
+      document.getElementById("teste6").innerHTML = points[0];
+      points.sort(function(a,b){return a-b});
+      document.getElementById("teste7").innerHTML = points[0];
+
+      function myFunction() {
+        fruits.sort();
+        document.getElementById("teste").innerHTML = fruits;
+      }
+      function myFunction2() {
+        fruits.sort();
+        fruits.reverse();
+        document.getElementById("teste2").innerHTML = fruits;
+      }
+      function myFunction3() {
+        points.sort(function(a,b){return a-b});
+        document.getElementById("teste3").innerHTML = points;
+      }
+      function myFunction4() {
+        points.sort(function(a,b){return b-a});
+        document.getElementById("teste4").innerHTML = points;
+      }
+      function myFunction5() {
+        points.sort(function(a,b){return 0.5 - Math.random()});
+        document.getElementById("teste5").innerHTML = points;
+      }
+      function myFunction6() {
+        cars.sort(function(a,b){return a.year - b.year});
+        displayCars();
+      }
+      function displayCars() {
+        document.getElementById("teste8").innerHTML =
+        cars[0].type + " " + cars[0].year + "<br>" +
+        cars[1].type + " " + cars[1].year + "<br>" +
+        cars[2].type + " " + cars[2].year;
+      }
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
