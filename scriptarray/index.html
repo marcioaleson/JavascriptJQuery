@@ -9,10 +9,53 @@
   <body>
       <h1>O que o javascript pode fazer?</h1>
       <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
+      <p id="teste7"></p>
+      <p id="teste8"></p>
+      <p id="teste9"></p>
+      <p id="teste10"></p>
       <script type="text/javascript">
       //Variáveis
       var cars = ["Saab", "Volvo", "BMW"];
+      var person = ["John", "Doe", 46];
+      var person2 = {firstName:"John", lastName:"Doe", age:46};
+      var fruits = ["Banana", "Orange", "Apple", "Mongo"];
+      var flen = fruits.length;
+      var text = "<ul>";
+      var person3 = [];
+      person3[0] = "John";
+      person3[1] = "Doe";
+      person3[2] = 46;
+
       document.getElementById("teste").innerHTML = cars;
+      document.getElementById("teste2").innerHTML = person[0];
+      document.getElementById("teste3").innerHTML = person2["firstName"];
+      document.getElementById("teste4").innerHTML = fruits.length;
+
+      for (var i = 0; i < flen; i++) {
+          text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("teste5").innerHTML = text;
+
+      text = "<ul>";
+      fruits.push("Lemon");
+      for (var i = 0; i < fruits.length; i++) {
+        text += "<li>" +  fruits[i] + "</li>";
+      }
+      text += "</ul>"
+      document.getElementById("teste6").innerHTML = text;
+      document.getElementById("teste7").innerHTML = person3[0] + " " + person3.length;
+      document.getElementById("teste8").innerHTML = Array.isArray(fruits);
+      document.getElementById("teste9").innerHTML = isArray(fruits);
+      function isArray(x) {
+        return x.constructor.toString().indexOf("Array") > -1;
+      }
+      document.getElementById("teste10").innerHTML = fruits instanceof Array;
       </script>
   <!-- JQuery -->
   <script src="js/jquery-3.1.0.min.js"></script>
