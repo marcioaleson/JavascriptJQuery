@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript operações com arrays exemplos.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+      <button type="button" name="button" onclick="myFunction()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction2()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction3()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction4()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction5()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction6()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction7()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction8()">Try it!</button>
+      <button type="button" name="button" onclick="myFunction9()">Try it!</button>
+
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
+      <p id="teste7"></p>
+      <p id="teste8"></p>
+      <p id="teste9"></p>
+      <p id="teste10"></p>
+      <p id="teste11"></p>
+      <p id="teste12"></p>
+      <p id="teste13"></p>
+      <p id="teste14"></p>
+
+      <script type="text/javascript">
+      //Variáveis
+      var fruits = ["Banana", "Orange", "Apple", "Mongo"];
+      var myGirls = ["Cecilie", "Lone"];
+      var myBoys = ["Email", "Tobias", "Linux"];
+      var myChildren = myGirls.concat(myBoys);
+      var citrus = fruits.slice(1);
+      var othersFruits = fruits.slice(1,3);
+
+      document.getElementById("teste").innerHTML = fruits.toString();
+      document.getElementById("teste2").innerHTML = fruits.join(" * ");
+      document.getElementById("teste3").innerHTML = fruits;
+      document.getElementById("teste4").innerHTML = fruits;
+      document.getElementById("teste5").innerHTML = fruits;
+      document.getElementById("teste6").innerHTML = fruits;
+      document.getElementById("teste7").innerHTML = fruits;
+      document.getElementById("teste8").innerHTML = fruits;
+      document.getElementById("teste9").innerHTML = fruits;
+      document.getElementById("teste10").innerHTML = fruits;
+      document.getElementById("teste11").innerHTML = fruits;
+      document.getElementById("teste12").innerHTML = myChildren;
+      document.getElementById("teste13").innerHTML = fruits + "<br>" + citrus;
+      document.getElementById("teste14").innerHTML = fruits + "<br>" + othersFruits;
+
+      function myFunction() {
+        document.getElementById("teste3").innerHTML = fruits.pop();
+      }
+      function myFunction2() {
+        fruits.push("Kiwi");
+        document.getElementById("teste4").innerHTML = fruits;
+      }
+      function myFunction3() {
+        fruits.shift();
+        document.getElementById("teste5").innerHTML = fruits;
+      }
+      function myFunction4() {
+        fruits.unshift("Lemon");
+        document.getElementById("teste6").innerHTML = fruits;
+      }
+      function myFunction5() {
+        fruits[0] = "Kiwi";
+        document.getElementById("teste7").innerHTML = fruits;
+      }
+      function myFunction6() {
+        fruits[fruits.length] = "Kiwi";
+        document.getElementById("teste8").innerHTML = fruits;
+      }
+      function myFunction7() {
+        delete fruits[0];
+        document.getElementById("teste9").innerHTML = fruits[0];
+      }
+      function myFunction8() {
+        fruits.splice(2,0,"Lemon","Kiwi");
+        document.getElementById("teste10").innerHTML = fruits;
+      }
+      function myFunction9() {
+        fruits.splice(3,1);
+        document.getElementById("teste11").innerHTML = fruits;
+      }
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
