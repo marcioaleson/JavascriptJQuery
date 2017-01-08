@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript operações com loop.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+
+      <script type="text/javascript">
+      //Variáveis
+      var cars = ["BMW", "Volvo", "Saab", "Ford", "Ford", "Fiat", "Audi"];
+      var text = "";
+      var i;
+      var len;
+      var person = {fname: "John", lname: "Doe", age: 25};
+      var x;
+
+      for (i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+      }
+      document.getElementById("teste").innerHTML = text;
+      for ( i = 0, len = cars.length, text = ""; i < len ; i++) {
+        text += cars[i] + "<br>";
+      }
+      document.getElementById("teste2").innerHTML = text;
+      text = "";
+      i = 0;
+      for (; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+      }
+      document.getElementById("teste3").innerHTML = text;
+      text = "";
+      i = 0;
+      for (; i < cars.length;) {
+        text += cars[i] + "<br>";
+        i++;
+      }
+      document.getElementById("teste4").innerHTML = text;
+      text = "";
+      for ( x in person) {
+        if (person.hasOwnProperty(x)) {
+          text += person[x] + " ";
+        }
+      }
+      document.getElementById("teste5").innerHTML = text;
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
