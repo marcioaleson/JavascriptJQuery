@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript operações com break de loops.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+
+      <script type="text/javascript">
+      //Variáveis
+      var text = "";
+      var i;
+      for (var i = 0; i < 10; i++)
+      {
+        if (i == 3) {
+          break;
+        }
+        text += "The number is " + i + "<br>";
+      }
+      document.getElementById("teste").innerHTML = text;
+      </script>
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
