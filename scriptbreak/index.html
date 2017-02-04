@@ -17,6 +17,8 @@
       //Variáveis
       var text = "";
       var i;
+      var cars = ["BMW", "Volvo", "Saab", "Ford"];
+
       for (var i = 0; i < 10; i++)
       {
         if (i == 3) {
@@ -24,7 +26,34 @@
         }
         text += "The number is " + i + "<br>";
       }
+
       document.getElementById("teste").innerHTML = text;
+
+      text = "";
+      for (var i = 0; i < 10; i++)
+       {
+        if (i === 3) {
+          continue;
+        }
+        text += "The number is " + i + "<br>";
+      }
+
+      document.getElementById("teste2").innerHTML = text;
+
+      text = "";
+
+      list: {
+        text += cars[0] + "<br>";
+        text += cars[1] + "<br>";
+        text += cars[2] + "<br>";
+        break list;
+        text += cars[3] + "<br>";
+        text += cars[4] + "<br>";
+        text += cars[5] + "<br>";
+
+      }
+
+      document.getElementById("teste3").innerHTML = text;
       </script>
   <!-- JQuery -->
   <script src="js/jquery-3.1.0.min.js"></script>
