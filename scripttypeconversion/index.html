@@ -10,6 +10,7 @@
       <h1>O que o javascript pode fazer?</h1>
 
       <p id="teste"></p>
+      <p id="teste2"></p>
 
       <script type="text/javascript">
       //Variáveis
@@ -24,7 +25,16 @@
         typeof new Date() + "<br>" +
         typeof function () {} + "<br>" +
         typeof myCar + "<br>" +
-        typeof null; 
+        typeof null;
+
+      document.getElementById("teste2").innerHTML =
+      "John".constructor + "<br>" +
+      (3.14).constructor + "<br>" +
+      false.constructor + "<br>" +
+      [1,2,3,4].constructor + "<br>" +
+      {name:'John', age: 34}.constructor + "<br>" +
+      new Date().constructor + "<br>" +
+      function () {}.constructor; 
       </script>
   <!-- JQuery -->
   <script src="js/jquery-3.1.0.min.js"></script>
