@@ -11,9 +11,13 @@
 
       <p id="teste"></p>
       <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
 
       <script type="text/javascript">
       //Variáveis
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      var myDate = new Date();
 
      document.getElementById("teste").innerHTML =
         typeof "John" + "<br>" +
@@ -34,7 +38,19 @@
       [1,2,3,4].constructor + "<br>" +
       {name:'John', age: 34}.constructor + "<br>" +
       new Date().constructor + "<br>" +
-      function () {}.constructor; 
+      function () {}.constructor;
+
+      document.getElementById("teste3").innerHTML = isArray(fruits);
+
+      function isArray(myArray){
+        return myArray.constructor.toString().indexOf("Array") > -1;
+      }
+
+      document.getElementById("teste4").innerHTML = isDate(myDate);
+
+      function isDate(myDate){
+        return myDate.constructor.toString().indexOf("Date") > -1;
+      }
       </script>
   <!-- JQuery -->
   <script src="js/jquery-3.1.0.min.js"></script>
