@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript operações de Bitwise.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
+      <p id="teste7"></p>
+      <p id="teste8"></p>
+      <p id="teste9"></p>
+
+
+      <script type="text/javascript">
+      //Variáveis
+
+      document.getElementById("teste").innerHTML = 5 & 1;
+      document.getElementById("teste2").innerHTML = 5 | 1;
+      document.getElementById("teste3").innerHTML = 5 ^ 1;
+      document.getElementById("teste4").innerHTML = ~ 5;
+      document.getElementById("teste5").innerHTML = 5 << 1;
+      document.getElementById("teste6").innerHTML = -5 >> 1;
+      document.getElementById("teste7").innerHTML = 5 >>> 1;
+      document.getElementById("teste8").innerHTML = dec2bin(-5);
+      function dec2bin(dec){
+          return (dec >>> 0).toString(2);
+      }
+      document.getElementById("teste9").innerHTML = bin2dec(101);
+      function bin2dec(bin){
+          return parseInt(bin, 2).toString(10);
+      }
+      </script>
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
