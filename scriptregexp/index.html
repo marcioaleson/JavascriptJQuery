@@ -12,10 +12,17 @@
       <button type="button" name="button" onclick="myFunction()">Click it!</button>
       <button type="button" name="button" onclick="myFunction2()">Click it!</button>
       <button type="button" name="button" onclick="myFunction3()">Click it!</button>
+      <button type="button" name="button" onclick="myFunction4()">Click it!</button>
+      <button type="button" name="button" onclick="myFunction5()">Click it!</button>
+
+      <p id="example">The best things in life are freedom!</p>
 
       <p id="teste"></p>
       <p id="teste2"></p>
       <p id="teste3">Please visit Microsoft!</p>
+      <p id="teste4">Please visit Microsoft!</p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
 
       <script type="text/javascript">
       //Variáveis
@@ -36,6 +43,22 @@
         var str = document.getElementById("teste3").innerHTML;
         var txt = str.replace(/microsoft/i,"W3Schools");
         document.getElementById("teste3").innerHTML = txt;
+      }
+
+      function myFunction4(){
+        var str = document.getElementById("teste4").innerHTML;
+        var txt = str.replace("Microsoft", "W3Schools");
+        document.getElementById("teste4").innerHTML = txt;
+      }
+
+      function myFunction5(){
+        text = document.getElementById("example").innerHTML;
+        document.getElementById("teste5").innerHTML = /e/.test(text);
+      }
+
+      function myFunction6(){
+        text = document.getElementById("example").innerHTML;
+        document.getElementById("teste6").innerHTML = \e\.exec(text);
       }
       </script>
 
