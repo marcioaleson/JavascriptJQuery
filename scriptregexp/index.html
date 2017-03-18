@@ -10,15 +10,32 @@
       <h1>O que o javascript pode fazer?</h1>
 
       <button type="button" name="button" onclick="myFunction()">Click it!</button>
+      <button type="button" name="button" onclick="myFunction2()">Click it!</button>
+      <button type="button" name="button" onclick="myFunction3()">Click it!</button>
 
       <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3">Please visit Microsoft!</p>
 
       <script type="text/javascript">
       //Variáveis
+
       function myFunction(){
         var str = "Visit W3Schools!";
         var n = str.search(/w3Schools/i);
         document.getElementById("teste").innerHTML = n;
+      }
+
+      function myFunction2(){
+        var str = "Visit W3Schools!";
+        var n = str.search("W3Schools");
+        document.getElementById("teste2").innerHTML = n;
+      }
+
+      function myFunction3(){
+        var str = document.getElementById("teste3").innerHTML;
+        var txt = str.replace(/microsoft/i,"W3Schools");
+        document.getElementById("teste3").innerHTML = txt;
       }
       </script>
 
