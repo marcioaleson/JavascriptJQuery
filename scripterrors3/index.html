@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript operações de tratamentos de errors.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+
+      <p>Please input a number between 5 and 10:</p>
+      <input type="text" name="" value="" id="value">
+      <button type="button" name="button" onClick="myFunction()">Test input</button>
+      <p id="message"></p>
+
+      <script type="text/javascript">
+      //Variáveis
+
+     function myFunction(){
+       var message, x;
+       message = document.getElementById("message");
+       message.innerHTML = "";
+       x = document.getElementById("value").value;
+       try {
+         if (x == "") {
+           throw "Empty";
+         }
+         if (isNaN(x)) {
+           throw "Is not a number";
+         }
+         x = Number(x);
+         if (x < 5) {
+           throw "Too low";
+         }
+         if (x > 10) {
+           throw "Too high"
+         }
+       } catch (e) {
+           message.innerHTML = "Input is " + e;
+       }finally{
+         document.getElementById("value").value = "";
+
+       }
+     }
+      </script>
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
