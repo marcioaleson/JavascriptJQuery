@@ -12,9 +12,19 @@
       <p>You can set a number of significant digits of a number ot 500:</p>
       <p id="message"></p>
 
+      <p>You cannot use the value of a non-existing variable:</p>
+      <p id="message2"></p>
+
+      <p>You cannot evaluate code that contains a syntax error:</p>
+      <p id="message3"></p>
+
+      <p>You cannot convert a number to upper case:</p>
+      <p id="message4"></p>
+
       <script type="text/javascript">
       //Variáveis
       var num  = 1;
+      var x;
 
       //Range error
       try {
@@ -23,6 +33,28 @@
         document.getElementById("message").innerHTML = e.name;
       }
 
+      //Reference error
+      try {
+        x = y + 1;
+      } catch (e) {
+        document.getElementById("message2").innerHTML = e.name;
+      }
+
+      //Syntax Error
+      try {
+        eval("alert('Hello)");
+      } catch (e) {
+        document.getElementById("message3").innerHTML = e.name;
+      }
+
+      //Type error
+      try {
+        num.toUpperCase();
+      } catch (e) {
+       document.getElementById("message4").innerHTML = e.name;
+      } finally {
+
+      }
       </script>
 
   <!-- JQuery -->
