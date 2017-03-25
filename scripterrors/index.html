@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript operações de tratamentos de errors.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <h1>O que o javascript pode fazer?</h1>
+
+      <p id="teste"></p>
+
+      <script type="text/javascript">
+      //Variáveis
+
+     try {
+       adddlert("Welcome guest!");
+     } catch (err) {
+      document.getElementById("teste").innerHTML = err.message;
+     }
+
+      </script>
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
