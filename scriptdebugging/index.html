@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <h1>O que o javascript pode fazer?</h1>
+      <h1>A tive debugging in your broser (Chrome, IE, Firefox) with F12, and select "Console" in
+      the debugger menu.</h1>
+      <h1>With the debugger turned on, the code below should stop executing before it executes the
+      third line.</h1>
 
+      <p id="teste"></p>
 
       <script type="text/javascript">
       //Variáveis
-  
+      a = 5;
+      b = 6;
+      c = a + b;
+      var x = 15 * 5;
+      console.log(c)
+      debugger;
+      document.getElementById("teste").innerHTML = x;
       </script>
 
   <!-- JQuery -->
