@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript operações de Hoisting.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+      <p id="teste"></p>
+
+      <script type="text/javascript">
+      //Variáveis
+      x = 5;
+
+      element = document.getElementById("teste");//Find the element
+      element.innerHTML = x; //Display x in the element
+
+      var x; //Declare x
+      </script>
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
