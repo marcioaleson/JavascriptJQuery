@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+      <p>Never create strings as objects.</p>
+      <p>Strings and objects cannot be safety compared.</p>
 
-
-       <p id="teste"></p>
+      <p id="teste"></p>
       <script type="text/javascript">
       //Variáveis
+      var x = "John"; //x is a string
+      var y = new String("john");// y is an object
+      document.getElementById("teste").innerHTML = y===x;
 
       </script>
 
