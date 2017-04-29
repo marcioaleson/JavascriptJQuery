@@ -11,12 +11,121 @@
       <p>Strings and objects cannot be safety compared.</p>
 
       <p id="teste"></p>
+
+      <p>Never creatre strings as object.</p>
+      <p>JavaScript cannoot compare objects.</p>
+
+      <p id="teste2"></p>
+
+      <p id="teste3"></p>
+
+      <p id="teste4"></p>
+
+      <p>Remove the comment(at beginning of the lines) to test each case:</p>
+
+      <p id="teste5"></p>
+
+      <p id="teste6"></p>
+
+      <p>Remove the comment (at the beginning of each line) to test each case:</p>
+
+      <p id="teste7"></p>
+
+      <p>Setting a default value to a function paremeter.</p>
+      <p id="teste8"></p>
+
+      <p>End your Switches with defaults</p>
+      <p id="teste9"></p>
       <script type="text/javascript">
       //Variáveis
       var x = "John"; //x is a string
       var y = new String("john");// y is an object
       document.getElementById("teste").innerHTML = y===x;
 
+      var x2 = new String("John");
+      var y2 = new String("John");
+      document.getElementById("teste2").innerHTML = x==y;
+
+      var x1 = {};
+      var x2 = ""
+      var x3 = 0;
+      var x4 = false;
+      var x5 = [];
+      var x6 = /()/;
+      var x7 = function(){};
+
+      document.getElementById("teste").innerHTML =
+      "x1: " + typeof x1 + "<br>" +
+      "x2: " + typeof x2 + "<br>" +
+      "x3: " + typeof x3 + "<br>" +
+      "x4: " + typeof x4 + "<br>" +
+      "x5: " + typeof x5  + "<br>" +
+      "X6: " + typeof x6 + "<br>" +
+      "x7: " + typeof x7 + "<br>" ;
+
+      var z = "Hello";
+      var z = 5;
+      document.getElementById("teste4").innerHTML = typeof x;
+
+      var w = 5;
+      //var w = 5 + 7; //x.valueOf() is 12, typeof x is a number
+      //var w = 5 + "7"; //x.valueOf() is 57, typeof x is a string
+      //var w  = "5" + 7;//x.valueOf() is 57, typeof x is a string
+      //var w = 5 - 7;//x.valueOf() is -2; typeof x is a number
+      //var w = 5 - "7";//x.valueOf() is -2, typeof is a number
+      //var w = "5" - 7;//x.valueOf() is -2, typeof is a number
+      //var w = 5 - "x";//x.valueOf() is NaN, typeof x is a number
+
+      document.getElementById("teste5").innerHTML = x.valueOf() + " " + typeof x;
+
+      document.getElementById("teste6").innerHTML = "Hello" - "Dolly";
+
+      var a;
+      //a = (0 == ""); //true
+      //a = (1 == "1"); //true
+      //a = (1 == true); //true
+      //a = (0 === ""); //false
+      //a = (1 === "1"); //false
+      //a = (1 === true); //false
+
+     document.getElementById("teste7").innerHTML = x;
+
+     function myFunction(x, y){
+          if (y === undefined) {
+               y = 0;
+          }
+          return x * y;
+     }
+
+     document.getElementById("teste8").innerHTML = myFunction(4);
+
+     var day;
+     switch (new Date().getDay()) {
+       case 0:
+         day = "Sunday";
+         break;
+       case 1:
+         day = "Monday";
+         break;
+       case 2:
+         day  = "Tuesday";
+         break;
+       case 3:
+         day = "Wednesday";
+         break;
+       case 4:
+         day = "Thursday";
+         break;
+       case 5:
+         day = "Friday";
+         break;
+       case 6:
+         day  = "Saturday";
+         break;
+       default:
+         day = "Unknown";
+     }
+     document.getElementById("teste9").innerHTML = "Today is " + day;
       </script>
 
   <!-- JQuery -->
