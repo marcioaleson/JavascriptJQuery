@@ -6,10 +6,31 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-
+  <p>Accidentally using the assignment operator:</p>
+      <p id="teste"></p>
+      <p id="teste2"></p>
+      <p id="teste3"></p>
+    <p>Expecting loose comparison</p>
+      <p id="teste4"></p>
+      <p id="teste5"></p>
+      <p id="teste6"></p>
       <script type="text/javascript">
       //Variáveis
-    
+      var x = 0;
+      var y = 10;
+      var z = "10";
+      document.getElementById("teste").innerHTML = Boolean(x == 10);
+      document.getElementById("teste2").innerHTML = Boolean(x = 10);
+      document.getElementById("teste3").innerHTML = Boolean(x = 0);
+
+      document.getElementById("teste4").innerHTML = Boolean(y == y);
+      document.getElementById("teste5").innerHTML = Boolean(y === z);
+      switch (x) {
+        case 0: alert("HELLO!!!");
+      }
+      switch (x) {
+        case "10": alert("HELLO!!!");
+      }
       </script>
 
   <!-- JQuery -->
