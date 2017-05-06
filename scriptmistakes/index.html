@@ -14,6 +14,30 @@
       <p id="teste4"></p>
       <p id="teste5"></p>
       <p id="teste6"></p>
+    <p>Confusing addition & Concatenation</p>
+      <p id="teste7"></p>
+    <p>Misunderstanding Floats</p>
+      <p id="teste8"></p>
+      <p id="teste9"></p>
+    <p>Breaking a JavaScript String</p>
+      <p id="teste10"></p>
+      <p id="teste11"></p>
+    <p>Misplacing Semicolon</p>
+      <p id="teste12"></p>
+    <p>Breaking a Return Statement</p>
+      <p id="teste13"></p>
+      <p id="teste14"></p>
+      <p id="teste15"></p>
+      <p id="teste16"></p>
+      <p id="teste17"></p>
+    <p>Accesing Arrays with Named Indexes</p>
+      <p id="teste18"></p>
+      <p>If you use a named index, when accessing an array, JavaScript will redefined the
+         array to a standard object, and some array methods and properties will produce
+         undefined or incorrect results.</p>
+       <p id="teste19"></p>
+     <p>Expecting block level scope</p>
+      <p id="teste20"></p>
       <script type="text/javascript">
       //Variáveis
       var x = 0;
@@ -31,6 +55,72 @@
       switch (x) {
         case "10": alert("HELLO!!!");
       }
+      document.getElementById("teste7").innerHTML = x + "5";
+
+      document.getElementById("teste8").innerHTML = 0.1 + 0.2;
+      document.getElementById("teste9").innerHTML = (0.1 * 10 + 0.2 * 10)/10;
+
+      document.getElementById("teste10").innerHTML =
+      "HELLO WORLD!";
+     /*document.getElementById("teste11").innerHTML = "HELLO
+      WORLD!";*/
+      document.getElementById("teste11").innerHTML = "HELLO \
+      WORLD!"
+
+      if (x == 3); {
+          document.getElementById("teste12").innerHTML = "HELLO!";
+      }
+
+      document.getElementById("teste13").innerHTML = myFunction(55);
+      function myFunction(a){
+         var power = 10;
+         return a * power
+      }
+      document.getElementById("teste14").innerHTML = myFunction2(55);
+      function myFunction2(a){
+        var power = 10;
+        return a * power;
+      }
+      document.getElementById("teste15").innerHTML = myFunction3(55);
+      function myFunction3(a){
+        var
+        power = 10;
+        return a * power;
+      }
+      document.getElementById("teste16").innerHTML = myFunction4(55);
+      function myFunction(a){
+        var
+        power  = 10;
+        return
+        a * power;
+      }
+      document.getElementById("teste17").innerHTML = myFunction4(55);
+      function myFunction4(a) {
+        var
+        power = 10;
+        return;
+        a * power;
+      }
+
+      var person = [];
+      person[0] = "John";
+      person[1] = "Doe";
+      person[2] = 46;
+
+      document.getElementById("teste18").innerHTML =
+      person[0] + " " + person.length;
+
+      person2 = [];
+      person2["firstName"] = "John";
+      person2["lastName"] = "Doe";
+      person2["age"] = 46;
+      document.getElementById("teste19").innerHTML =
+      person2[0] + " " + person2.length;
+
+      for (var i = 0; i < 10; i++) {
+
+        }
+      document.getElementById("teste20").innerHTML = i;
       </script>
 
   <!-- JQuery -->
