@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Best Performance.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <p>Reduce DOM Access</p>
+  <p id="teste"></p>
+      <script type="text/javascript">
+      //Variáveis
+      var obj;
+      obj = document.getElementById("teste");
+      obj.innerHTML  = "Hello World!";
+      </script>
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
