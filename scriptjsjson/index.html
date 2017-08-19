@@ -2,13 +2,24 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
-    <title>JavaScript Best Performance.</title>
+    <title>JavaScript JSON Example.</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <h2> Create Object from JSON String.</h2>
 
+  <p id="test"></p>
       <script type="text/javascript">
-      //Variáveis
+      //Variables
+      var text = '{"Employees":[' +
+                 '{"Firstname": "Jonh", "Lastname":"Doe" }, ' +
+                 '{"Firstname": "Anna", "Lastname": "Smith"},' +
+                 '{"Firstname": "Peter", "Lastname":"Jones"}]}';
+
+                 obj = JSON.parse(text);
+
+                 document.getElementById("test").innerHTML =
+                 obj.Employees[1].Firstname + " " + obj.Employees[1].Lastname;
 
       </script>
 
