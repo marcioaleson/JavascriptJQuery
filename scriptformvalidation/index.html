@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript JSON Example.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function validateForm(){
+          var x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out!");
+            return false;
+          }
+        }
+  </script>
+  </head>
+  <h2> Form Validation</h2>
+
+ <form class="" name="myForm" action="/action_page_post.php" onsubmit="return validateForm()" method="post">
+     Name: <input type="text" name="fname" value="">
+           <input type="submit" name="" value="Submit">
+ </form>
+
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/myScript.js"></script>
+  </body>
+</html>
