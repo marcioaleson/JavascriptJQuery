@@ -10,21 +10,29 @@
   <p id="test1"></p>
   <p>Creating a JavaScript Object.</p>
   <p id="test2"></p>
+  <p>Creating a JavaScript Objects using new Object().</p>
+  <p id="test3"></p>
 
   <script type="text/javascript">
   var person = "John Doe";
   var personObject = {
     firstName : "John",
-    lastName : "Doe";
-    age : 50;
+    lastName : "Doe",
+    age : 50,
     eyeColor : "bleu"
   };
+  var personObject2 = new Object();
+  personObject2.firstName = "John";
+  personObject2.lastName = "Doe";
+  personObject2.age = 50;
+  personObject2.eyeColor = "blue";
 
   document.getElementById("test1").innerHTML = person;
 
-  document.getElementById().innerHTML = personObject.firstName + " " + personObject.lastName;
+  document.getElementById("test2").innerHTML = personObject.firstName + " " + personObject.lastName;
 
-  
+  document.getElementById("test3").innerHTML = personObject2.firstName + " " + personObject2.lastName;
+
   </script>
 
   <!-- JQuery -->
