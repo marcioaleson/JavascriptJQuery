@@ -12,6 +12,8 @@
   <p id="test2"></p>
   <p>Creating a JavaScript Objects using new Object().</p>
   <p id="test3"></p>
+  <p>Creating a JavaSctipt Object and Variable with the same age.</p>
+  <p id="test4"></p>
 
   <script type="text/javascript">
   var person = "John Doe";
@@ -32,6 +34,11 @@
   document.getElementById("test2").innerHTML = personObject.firstName + " " + personObject.lastName;
 
   document.getElementById("test3").innerHTML = personObject2.firstName + " " + personObject2.lastName;
+
+  var x = personObject2;
+  x.age = 40;
+
+  document.getElementById("test4").innerHTML = "Now personObject2 and x with the same age: " + personObject2.age + "=" + x.age + ".";
 
   </script>
 
