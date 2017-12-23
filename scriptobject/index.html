@@ -2,12 +2,28 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
-    <title>JavaScript Validation API.</title>
+    <title>JavaScript Objects examples.</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <p>Creating a JavaScript Variable.</p>
+  <p id="test1"></p>
+  <p>Creating a JavaScript Object.</p>
+  <p id="test2"></p>
 
   <script type="text/javascript">
+  var person = "John Doe";
+  var personObject = {
+    firstName : "John",
+    lastName : "Doe";
+    age : 50;
+    eyeColor : "bleu"
+  };
+
+  document.getElementById("test1").innerHTML = person;
+
+  document.getElementById().innerHTML = personObject.firstName + " " + personObject.lastName;
+
   
   </script>
 
