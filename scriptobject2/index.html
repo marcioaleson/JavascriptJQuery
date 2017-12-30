@@ -6,10 +6,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-
+  <p>There are two different ways to access an object property:</p>
+  <p>You can use .preperty or ["property"].</p>
+  <p id="test"></p>
 
   <script type="text/javascript">
-  
+  var person = {
+    firstname: "John",
+    lastname: "Doe",
+    age: 50,
+    eyecolor: "blue"
+  };
+
+  document.getElementById("test").innerHTML = person.firstname + " is " + person.age + " years old.";
   </script>
 
   <!-- JQuery -->
