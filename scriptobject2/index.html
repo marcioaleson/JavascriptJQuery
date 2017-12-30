@@ -10,6 +10,9 @@
   <p>You can use .preperty or ["property"].</p>
   <p id="test"></p>
   <p id="test2"></p>
+  <p id="test3"></p>
+  <p id="test4"></p>
+  <p id="test5"></p>
 
   <script type="text/javascript">
   var person = {
@@ -18,10 +21,24 @@
     age: 50,
     eyecolor: "blue"
   };
+  var text;
 
   document.getElementById("test").innerHTML = person.firstname + " is " + person.age + " years old.";
 
- document.getElementById("test2").innerHTML = person["firstname"] + " is " + person["age"] + " years old.";
+  document.getElementById("test2").innerHTML = person["firstname"] + " is " + person["age"] + " years old.";
+
+ for(x in person){
+   text += person[x] + " ";
+ }
+
+  document.getElementById("test3").innerHTML = text;
+
+  person.nationality = "Brazilian";
+
+  document.getElementById("test4").innerHTML = person.firstname + " is " + person.nationality + ".";
+
+ delete person.age;
+ document.getElementById().innerHTML = person.firstname + " is " + person.age + " years old.";
   </script>
 
   <!-- JQuery -->
